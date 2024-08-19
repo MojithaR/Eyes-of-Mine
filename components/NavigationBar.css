@@ -1,0 +1,115 @@
+/* Styles for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #D2C3B0;  /* Background color similar to the one in the image */
+}
+
+.navbar .left-side,
+.navbar .right-side {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar button {
+  color: #583D32;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar button .button-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.navbar button:hover {
+  box-shadow: 0 4px 8px rgba(38, 26, 22, 0.2);
+}
+
+#companyLogo {
+  font-size: normal;
+  display: flex;
+  align-items: center;
+}
+
+#companyLogo span {
+  font-size: normal;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  background: #222 linear-gradient(
+    -40deg,
+    transparent 0%,
+    transparent 40%,
+    #fff 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-background-size: 50px;
+  -moz-background-size: 50px;
+  background-size: 50px;
+  -webkit-animation: zezzz 5s infinite;
+  -moz-animation: zezzz 5s infinite;
+  animation: zezzz 5s infinite;
+}
+
+@-webkit-keyframes zezzz {
+  0%, 10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@-moz-keyframes zezzz {
+  0%, 10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+@keyframes zezzz {
+  0%, 10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+/* Responsive design for the navigation bar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .left-side,
+  .navbar .right-side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
