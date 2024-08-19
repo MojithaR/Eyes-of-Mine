@@ -1,0 +1,23 @@
+.App {
+  width: auto;
+}
+.navigation_sec {
+  height: 100;
+  width: auto;
+  background-color: #EDD0B7;
+}
+.body_sec {
+  height: 500px;
+  width: auto;
+  background-color: #FFFBF2;
+}
+.footer_sec {
+  height: 68px;
+  width: auto;
+  background-color: #EDD0B7;
+}
+.sample_txt {
+  color: #261A16;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
